@@ -45,5 +45,10 @@ void loop(){
   Serial.print("  z: ");
   Serial.println(z);
   
+  if (x>200 && y>200 && z>200 || x<-200 && y<-200 && z<-200 ){
+    Serial.print("target is magnetic");
+  }
+   
+  
   delay(250);
 }
